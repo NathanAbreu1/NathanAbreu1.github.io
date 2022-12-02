@@ -1,0 +1,980 @@
+:root {
+  --main-color: rgb(119, 0, 255);
+  --black: #13131a;
+  --blue: #00bff0;
+}
+
+* {
+  font-family: "Roboto" sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #13131a;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+}
+
+header::before {
+  position: fixed;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  opacity: 0.7;
+}
+
+header .logo img {
+  position: relative;
+  width: 7rem;
+  height: 8rem;
+  filter: invert(1);
+  z-index: 1000000;
+}
+
+header .navbar {
+  position: relative;
+  padding-left: 0rem;
+  text-align: center;
+  z-index: 10000;
+  color: #fff;
+}
+
+header .navbar img {
+  display: none;
+}
+
+header .navbar a {
+  position: relative;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+header .navbar a:hover {
+  border-bottom: solid 0.1rem #fff;
+  transition: 0.9s;
+}
+
+header.sticky::before {
+  transition: 0.4s;
+  border: none;
+  background: none;
+  z-index: 100000;
+}
+
+header.sticky .navbar {
+  letter-spacing: 1px;
+  transition: 0.5s;
+  z-index: 1000000;
+  padding-right: 20px;
+}
+
+header.sticky .logo img {
+  width: 8rem;
+  height: 9rem;
+  transition: 0.5s;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  background-image: url(images/background1.png);
+  background-size: cover;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.banner .content {
+  position: relative;
+  z-index: 1000;
+}
+
+.banner .content h3 {
+  color: #fff;
+  font-size: 5rem;
+  margin: 30px 0px;
+}
+
+.btn {
+  position: relative;
+  color: #fff;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  z-index: 1000;
+  background: var(--main-color);
+  border-radius: 20px;
+  border: var(--main-color) 0.5rem solid;
+}
+
+.btn:hover {
+  z-index: 1000;
+  transition: 0.7s;
+  background: #00bff0;
+  letter-spacing: 4px;
+  border: #00bff0 0.5rem solid;
+}
+
+.about {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.about::before {
+  content: "";
+  background-image: url(images/background2.png);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.5;
+}
+
+.about .content {
+  position: relative;
+  padding: 300px 200px;
+  z-index: 1000;
+}
+
+.about .content h3 {
+  font-size: 5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.about .content p {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.about .content span {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.menu {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.menu::before {
+  position: absolute;
+  content: "";
+  background-image: url(images/background\ 3.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.menu .content {
+  position: relative;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.menu .content h3 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.menu .content p {
+  position: relative;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}
+.menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu .container .serviceBx {
+  position: relative;
+  background-color: #fff;
+  padding: 0px 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0px;
+  height: 500px;
+  width: 400px;
+}
+.menu .container .serviceBx h3 {
+  font-size: 2rem;
+}
+.menu .container .serviceBx p {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+.menu .container .serviceBx:hover {
+  background-color: var(--blue);
+  transition: 0.9s;
+}
+.menu .container .serviceBx .imgBx {
+  margin-left: 30px;
+}
+.menu .container .serviceBx .imgBx img {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.menu .container .serviceBx .imgBx img:hover {
+  width: 250px;
+  height: 250px;
+  transition: 0.5s;
+}
+
+.chefs {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.chefs::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url(images/background5.png);
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.chefs .content {
+  position: relative;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.chefs .content h3 {
+  padding-top: 0px;
+  font-size: 5rem;
+  color: #fff;
+}
+.chefs .content p {
+  font-size: 1.8rem;
+  color: #fff;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.chefs .container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.chefs .container .chefBx1 {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+  z-index: 10000;
+  margin: 0px 10px;
+}
+
+.chefs .container .chefBx1::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-color: var(--black);
+  background-image: url(images/c2.jpg);
+  background-position: center;
+  border-radius: 7rem;
+}
+
+.chefs .container .chefBx1 h3 {
+  color: transparent;
+}
+
+.chefs .container .chefBx1 p {
+  color: transparent;
+}
+
+.chefs .container .chefBx1:hover {
+  transition: 0.5s;
+  z-index: 10000;
+  width: 500px;
+  height: 600px;
+}
+
+.chefs .container .chefBx1:hover h3 {
+  position: relative;
+  padding-top: 12rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.chefs .container .chefBx1:hover p {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 20px;
+  transition: 0.5s;
+}
+
+.chefs .container .chefBx2 {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+  z-index: 10000;
+  margin: 0px 10px;
+}
+
+.chefs .container .chefBx2::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-color: var(--black);
+  background-image: url(images/c2.jpg);
+  background-position: center;
+  border-radius: 7rem;
+}
+
+.chefs .container .chefBx2 h3 {
+  color: transparent;
+}
+
+.chefs .container .chefBx2 p {
+  color: transparent;
+}
+
+.chefs .container .chefBx2:hover {
+  transition: 0.5s;
+  z-index: 10000;
+  width: 500px;
+  height: 600px;
+}
+
+.chefs .container .chefBx2:hover h3 {
+  position: relative;
+  padding-top: 12rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.chefs .container .chefBx2:hover p {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 20px;
+  transition: 0.5s;
+}
+.chefs .container .chefBx3 {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+  z-index: 10000;
+  margin: 0px 10px;
+}
+
+.chefs .container .chefBx3::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-color: var(--black);
+  background-image: url(images/c2.jpg);
+  background-position: center;
+  border-radius: 7rem;
+}
+.chefs .container .chefBx3 h3 {
+  color: transparent;
+}
+
+.chefs .container .chefBx3 p {
+  color: transparent;
+}
+
+.chefs .container .chefBx3:hover {
+  transition: 0.5s;
+  z-index: 10000;
+  width: 500px;
+  height: 600px;
+}
+
+.chefs .container .chefBx3:hover h3 {
+  position: relative;
+  padding-top: 12rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.chefs .container .chefBx3:hover p {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 20px;
+  transition: 0.5s;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.contact::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-image: url(images/background4.png);
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.contact .content {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.contact .content h3 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.contact .content p {
+  font-size: 1.8rem;
+  color: #fff;
+  padding-top: 15px;
+  text-align: center;
+  width: 50%;
+  padding-left: 25%;
+}
+
+.contact .container {
+  padding-top: 50px;
+  position: relative;
+}
+
+.contact .container .contactBx {
+  width: 50%;
+  margin: 10px 0px;
+  padding: 0% 25%;
+}
+
+.contact .container .contactBx input {
+  height: 50px;
+  background-color: transparent;
+  border-bottom: 0.2rem var(--blue) solid;
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.contact .container .contactBx textarea {
+  height: 100px;
+  background-color: transparent;
+  border-bottom: 0.2rem var(--blue) solid;
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  font-size: 1.3rem;
+}
+
+.contact .container .submitBx {
+  width: 50%;
+  align-items: center;
+  border-radius: 20px;
+  padding-bottom: 50px;
+  padding-left: 38%;
+  color: #00bff0;
+}
+
+.contact .container .submitBx input:hover {
+  background-color: var(--blue);
+  transition: 0.5;
+}
+
+.contact .container .submitBx input {
+  cursor: pointer;
+  border-radius: 20px;
+  width: 50%;
+  height: 50px;
+}
+
+.contact .container .links {
+  position: relative;
+}
+
+.contact .container .links .linksBx {
+  width: 25%;
+  padding-left: 40%;
+  padding-bottom: 20px;
+}
+
+.contact .container .links img {
+  width: 100px;
+  height: 100px;
+  filter: invert(1);
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+.contact .copyright {
+  position: relative;
+  padding-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 1rem;
+  display: flex;
+  align-items: center;
+  width: 25%;
+  padding-left: 40%;
+}
+
+.contact .copyright::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .header {
+    width: 100%;
+  }
+  header .navbar {
+    position: fixed;
+    top: 100px;
+    width: 20%;
+    height: 0px;
+    text-align: center;
+    z-index: 100000;
+    transition: 0.5s;
+    align-items: center;
+    display: none;
+    left: -100%;
+  }
+
+  header .navbar.active {
+    position: fixed;
+    top: 100px;
+    display: block;
+    width: 20%;
+    height: 0px;
+    text-align: center;
+    z-index: 100000;
+    transition: 0.5s;
+    align-items: center;
+    left: -49%;
+  }
+
+  header .navbar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .header .navbar a {
+    margin-right: 100px;
+  }
+
+  .banner {
+    width: 100%;
+    height: 100vh;
+  }
+
+  header .logo img {
+    width: 5rem;
+    height: 6rem;
+  }
+
+  header.sticky .logo img {
+    width: 6rem;
+    height: 7rem;
+    transition: 0.5s;
+  }
+
+  header .navbar img {
+    display: flex;
+    width: 5rem;
+    color: transparent;
+  }
+
+  .toggle {
+    position: fixed;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 2rem;
+    background-image: url(images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .toggle.active {
+    background-image: url(images/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .toggle::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .banner::before {
+    background-position: center;
+  }
+
+  .banner .content h3 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 30px 0px;
+  }
+
+  .banner .content span {
+    font-size: 3rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .btn:hover {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+  }
+
+  .about {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .about::before {
+    background-position: center;
+  }
+
+  .about .content h3 {
+    font-size: 3rem;
+  }
+
+  .about .content p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+
+  .about .content {
+    position: relative;
+    padding: 0px;
+    z-index: 1000;
+  }
+
+  .menu {
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu .container .serviceBx {
+    height: 300px;
+    width: 100px;
+  }
+
+  .menu .content h3 {
+    padding-top: 10px;
+    font-size: 3rem;
+    color: #fff;
+  }
+
+  .menu .content p {
+    font-size: 1rem;
+  }
+
+  .menu .container {
+    display: grid;
+  }
+
+  .menu .container .serviceBx {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .menu .container .serviceBx h3 {
+    font-size: 1rem;
+  }
+
+  .menu .container .serviceBx .imgBx img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-right: 30px;
+  }
+
+  .menu .container .serviceBx .imgBx img:hover {
+    width: 100px;
+    height: 100px;
+    transition: 0;
+  }
+
+  .menu .container .serviceBx p {
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+
+  .menu .content p {
+    position: relative;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .chefs {
+    width: 100%;
+    height: 100%;
+  }
+
+  .chefs::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+  }
+
+  .chefs .content h3 {
+    font-size: 3rem;
+    padding-bottom: 15px;
+  }
+
+  .chefs .content p {
+    font-size: 1.2rem;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .chefs .container {
+    display: grid;
+  }
+
+  .chefs .container .chefBx1 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .chefs .container .chefBx1:hover {
+    position: relative;
+    width: 400px;
+    height: 500px;
+  }
+
+  .chefs .container .chefBx1:hover h3 {
+    font-size: 1.4rem;
+    padding-top: 8rem;
+  }
+
+  .chefs .container .chefBx1:hover p {
+    font-size: 1rem;
+  }
+
+  .chefs .container .chefBx2 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .chefs .container .chefBx2:hover {
+    position: relative;
+    width: 400px;
+    height: 500px;
+  }
+
+  .chefs .container .chefBx2:hover h3 {
+    font-size: 1.4rem;
+    padding-top: 8rem;
+  }
+
+  .chefs .container .chefBx2:hover p {
+    font-size: 1rem;
+  }
+
+  .chefs .container .chefBx3 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .chefs .container .chefBx3:hover {
+    position: relative;
+    width: 400px;
+    height: 500px;
+  }
+  .chefs .container .chefBx3:hover h3 {
+    font-size: 1.4rem;
+    padding-top: 8rem;
+  }
+
+  .chefs .container .chefBx3:hover p {
+    font-size: 1rem;
+  }
+
+  .contact {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact::before {
+    background-position: center;
+  }
+
+  .contact .content p {
+    font-size: 1.3rem;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .contact .container .links .linksBx {
+    width: 25%;
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact .content h3 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+  }
+  .contact .container .links img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .contact .container .contactBx input {
+    height: 25px;
+    font-size: 1.2rem;
+  }
+
+  .contact .container .contactBx textarea {
+    height: 60px;
+    font-size: 1rem;
+  }
+
+  .contact .container .submitBx {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .contact .container .submitBx input {
+    height: 25px;
+  }
+  .contact .copyright {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
+    font-size: 1xrem;
+  }
+}

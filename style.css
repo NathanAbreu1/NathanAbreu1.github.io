@@ -665,12 +665,6 @@ header.sticky .logo img {
     margin-right: 100px;
   }
 
-.banner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
   header .logo img {
     width: 5rem;
     height: 6rem;
@@ -716,6 +710,12 @@ header.sticky .logo img {
     bottom: 0;
   }
 
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
   .banner::before {
     background-position: center;
   }
@@ -742,6 +742,10 @@ header.sticky .logo img {
   .about {
     width: 100%;
     height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .about::before {
@@ -857,19 +861,19 @@ header.sticky .logo img {
   .chefs .container .chefBx1 {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 350px;
     margin-bottom: 20px;
   }
 
   .chefs .container .chefBx1:hover {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 350px;
   }
 
   .chefs .container .chefBx1:hover h3 {
     font-size: 1.4rem;
-    padding-top: 8rem;
+    padding-top: 3rem;
   }
 
   .chefs .container .chefBx1:hover p {
@@ -879,19 +883,19 @@ header.sticky .logo img {
   .chefs .container .chefBx2 {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 350px;
     margin-bottom: 20px;
   }
 
   .chefs .container .chefBx2:hover {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 350px;
   }
 
   .chefs .container .chefBx2:hover h3 {
     font-size: 1.4rem;
-    padding-top: 8rem;
+    padding-top: 3rem;
   }
 
   .chefs .container .chefBx2:hover p {
@@ -901,18 +905,18 @@ header.sticky .logo img {
   .chefs .container .chefBx3 {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 350px;
     margin-bottom: 20px;
   }
 
   .chefs .container .chefBx3:hover {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 350px;
   }
   .chefs .container .chefBx3:hover h3 {
     font-size: 1.4rem;
-    padding-top: 8rem;
+    padding-top: 3rem;
   }
 
   .chefs .container .chefBx3:hover p {
@@ -976,6 +980,7 @@ header.sticky .logo img {
     justify-content: center;
     width: 100%;
     padding-left: 0;
-    font-size: 1xrem;
+    font-size: 1rem;
   }
 }
+

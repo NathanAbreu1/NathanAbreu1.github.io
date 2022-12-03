@@ -699,7 +699,7 @@ header.sticky .logo img {
   }
 
   .toggle.active {
-    z-index: 10000;
+    z-index: 1000000;
     background-image: url(images/close.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -869,28 +869,60 @@ header.sticky .logo img {
     height: 250px;
     margin-bottom: 20px;
     border-radius: 0rem;
+    text-align: center;
   }
 
+  .chefs .container .chefBx1 h3 {
+    padding-top: 30px;
+    position: relative;
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 1.8rem;
+  }
+
+  .chefs .container .chefBx1 p {
+    position: relative;
+    font-size: 0.8rem;
+    width: 80%;
+    color: #fff;
+    padding-left: 20px;
+  }
+
+  .chefs .container .chefBx1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    padding-left: 0;
+  }
   .chefs .container .chefBx1:hover {
     position: relative;
     width: 200px;
     height: 250px;
     border-radius: 0;
-  }
-
-  .chefs .container .chefBx1::before {
-    border-radius: 0.5rem;
-    opacity: 0.8;
+    padding-left: 0;
   }
 
   .chefs .container .chefBx1:hover h3 {
-    font-size: 1rem;
-    padding-top: 0;
-    padding-bottom: 10px;
+    position: relative;
+    padding-top: 30px;
+    position: relative;
+    color: #fff;
+    padding-bottom: 15px;
+    padding-left: 0;
   }
 
   .chefs .container .chefBx1:hover p {
+    position: relative;
     font-size: 0.8rem;
+    width: 80%;
+    color: #fff;
+    padding-left: 0;
+    margin-left: 10%;
   }
 
   .chefs .container .chefBx2 {
@@ -899,29 +931,60 @@ header.sticky .logo img {
     height: 250px;
     margin-bottom: 20px;
     border-radius: 0rem;
+    text-align: center;
   }
 
+  .chefs .container .chefBx2 h3 {
+    padding-top: 30px;
+    position: relative;
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 1.8rem;
+  }
+
+  .chefs .container .chefBx2 p {
+    position: relative;
+    font-size: 0.8rem;
+    width: 80%;
+    color: #fff;
+    padding-left: 20px;
+  }
+
+  .chefs .container .chefBx2::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    padding-left: 0;
+  }
   .chefs .container .chefBx2:hover {
     position: relative;
     width: 200px;
     height: 250px;
     border-radius: 0;
-  }
-
-  .chefs .container .chefBx2::before {
-    border-radius: 0.5rem;
-    opacity: 0.8;
+    padding-left: 0;
   }
 
   .chefs .container .chefBx2:hover h3 {
     position: relative;
-    font-size: 1rem;
-    padding-top: 0;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    position: relative;
+    color: #fff;
+    padding-bottom: 15px;
+    padding-left: 0;
   }
 
   .chefs .container .chefBx2:hover p {
+    position: relative;
     font-size: 0.8rem;
+    width: 80%;
+    color: #fff;
+    padding-left: 0;
+    margin-left: 10%;
   }
 
   .chefs .container .chefBx3 {
@@ -930,28 +993,60 @@ header.sticky .logo img {
     height: 250px;
     margin-bottom: 20px;
     border-radius: 0rem;
+    text-align: center;
   }
 
+  .chefs .container .chefBx3 h3 {
+    padding-top: 30px;
+    position: relative;
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 1.8rem;
+  }
+
+  .chefs .container .chefBx3 p {
+    position: relative;
+    font-size: 0.8rem;
+    width: 80%;
+    color: #fff;
+    padding-left: 20px;
+  }
+
+  .chefs .container .chefBx3::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    padding-left: 0;
+  }
   .chefs .container .chefBx3:hover {
     position: relative;
     width: 200px;
     height: 250px;
     border-radius: 0;
-  }
-
-  .chefs .container .chefBx3::before {
-    border-radius: 0.5rem;
-    opacity: 0.8;
+    padding-left: 0;
   }
 
   .chefs .container .chefBx3:hover h3 {
-    font-size: 1rem;
-    padding-top: 0;
-    padding-bottom: 10px;
+    position: relative;
+    padding-top: 30px;
+    position: relative;
+    color: #fff;
+    padding-bottom: 15px;
+    padding-left: 0;
   }
 
   .chefs .container .chefBx3:hover p {
+    position: relative;
     font-size: 0.8rem;
+    width: 80%;
+    color: #fff;
+    padding-left: 0;
+    margin-left: 10%;
   }
 
   .contact {

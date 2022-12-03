@@ -873,9 +873,9 @@ header.sticky .logo img {
   }
 
   .chefs .container .chefBx1 h3 {
-    padding-top: 30px;
+    padding-top: 20px;
     position: relative;
-    color: #fff;
+    color: #000;
     padding-bottom: 15px;
     font-size: 1.8rem;
   }
@@ -884,7 +884,7 @@ header.sticky .logo img {
     position: relative;
     font-size: 0.8rem;
     width: 80%;
-    color: #fff;
+    color: #000;
     padding-left: 20px;
   }
 
@@ -898,6 +898,9 @@ header.sticky .logo img {
     border-radius: 0.5rem;
     opacity: 1;
     padding-left: 0;
+    background-image: none;
+    background-color: #fff;
+    border: #00bff0;
   }
   .chefs .container .chefBx1:hover {
     position: relative;
@@ -909,9 +912,9 @@ header.sticky .logo img {
 
   .chefs .container .chefBx1:hover h3 {
     position: relative;
-    padding-top: 30px;
+    padding-top: 20px;
     position: relative;
-    color: #fff;
+    color: #000;
     padding-bottom: 15px;
     padding-left: 0;
   }
@@ -920,7 +923,7 @@ header.sticky .logo img {
     position: relative;
     font-size: 0.8rem;
     width: 80%;
-    color: #fff;
+    color: #000;
     padding-left: 0;
     margin-left: 10%;
   }
@@ -935,9 +938,9 @@ header.sticky .logo img {
   }
 
   .chefs .container .chefBx2 h3 {
-    padding-top: 30px;
+    padding-top: 20px;
     position: relative;
-    color: #fff;
+    color: #000;
     padding-bottom: 10px;
     font-size: 1.8rem;
   }
@@ -946,7 +949,7 @@ header.sticky .logo img {
     position: relative;
     font-size: 0.8rem;
     width: 80%;
-    color: #fff;
+    color: #000;
     padding-left: 20px;
   }
 
@@ -960,6 +963,9 @@ header.sticky .logo img {
     border-radius: 0.5rem;
     opacity: 1;
     padding-left: 0;
+    background-image: none;
+    background-color: #fff;
+    border: #00bff0;
   }
   .chefs .container .chefBx2:hover {
     position: relative;
@@ -971,9 +977,9 @@ header.sticky .logo img {
 
   .chefs .container .chefBx2:hover h3 {
     position: relative;
-    padding-top: 30px;
+    padding-top: 20px;
     position: relative;
-    color: #fff;
+    color: #000;
     padding-bottom: 10px;
     padding-left: 0;
   }
@@ -982,7 +988,7 @@ header.sticky .logo img {
     position: relative;
     font-size: 0.8rem;
     width: 80%;
-    color: #fff;
+    color: #000;
     padding-left: 0;
     margin-left: 10%;
   }
@@ -997,9 +1003,9 @@ header.sticky .logo img {
   }
 
   .chefs .container .chefBx3 h3 {
-    padding-top: 30px;
+    padding-top: 20px;
     position: relative;
-    color: #fff;
+    color: #000;
     padding-bottom: 10px;
     font-size: 1.8rem;
   }
@@ -1008,7 +1014,7 @@ header.sticky .logo img {
     position: relative;
     font-size: 0.8rem;
     width: 80%;
-    color: #fff;
+    color: #13131a;
     padding-left: 20px;
   }
 
@@ -1022,6 +1028,9 @@ header.sticky .logo img {
     border-radius: 0.5rem;
     opacity: 1;
     padding-left: 0;
+    background-image: none;
+    background-color: #fff;
+    border: #00bff0;
   }
   .chefs .container .chefBx3:hover {
     position: relative;
@@ -1033,9 +1042,9 @@ header.sticky .logo img {
 
   .chefs .container .chefBx3:hover h3 {
     position: relative;
-    padding-top: 30px;
+    padding-top: 20px;
     position: relative;
-    color: #fff;
+    color: #13131a;
     padding-bottom: 15px;
     padding-left: 0;
   }
@@ -1044,7 +1053,7 @@ header.sticky .logo img {
     position: relative;
     font-size: 0.8rem;
     width: 80%;
-    color: #fff;
+    color: #000;
     padding-left: 0;
     margin-left: 10%;
   }

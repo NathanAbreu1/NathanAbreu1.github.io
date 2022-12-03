@@ -896,7 +896,7 @@ header.sticky .logo img {
     left: 0;
     right: 0;
     border-radius: 0.5rem;
-    opacity: 0.8;
+    opacity: 1;
     padding-left: 0;
   }
   .chefs .container .chefBx1:hover {
@@ -938,7 +938,7 @@ header.sticky .logo img {
     padding-top: 30px;
     position: relative;
     color: #fff;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     font-size: 1.8rem;
   }
 
@@ -958,7 +958,7 @@ header.sticky .logo img {
     left: 0;
     right: 0;
     border-radius: 0.5rem;
-    opacity: 0.8;
+    opacity: 1;
     padding-left: 0;
   }
   .chefs .container .chefBx2:hover {
@@ -974,7 +974,7 @@ header.sticky .logo img {
     padding-top: 30px;
     position: relative;
     color: #fff;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     padding-left: 0;
   }
 
@@ -1000,7 +1000,7 @@ header.sticky .logo img {
     padding-top: 30px;
     position: relative;
     color: #fff;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     font-size: 1.8rem;
   }
 
@@ -1020,7 +1020,7 @@ header.sticky .logo img {
     left: 0;
     right: 0;
     border-radius: 0.5rem;
-    opacity: 0.8;
+    opacity: 1;
     padding-left: 0;
   }
   .chefs .container .chefBx3:hover {
@@ -1109,4 +1109,3 @@ header.sticky .logo img {
     font-size: 1rem;
   }
 }
-
